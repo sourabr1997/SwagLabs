@@ -26,15 +26,14 @@ public class LoginPageObject extends BaseClass {
 		PageFactory.initElements(getDriver(), this);
 	}
 	
-	public void loginSwagLabs(String uname, String pass) throws InterruptedException {
+	public ProductPageObject loginSwagLabs(String uname, String pass) throws InterruptedException {
 		
 		System.out.println("we are in login page");
 		ActionClass.type(username, uname);
 		ActionClass.type(password, pass);
-		ActionClass.click(getDriver(), loginbtn);
+		ActionClass.click(getDriver(),loginbtn);
 		
-		Thread.sleep(5000);
-		//return new ProductPage();
+		return new ProductPageObject();
 	}
 	
 	public String verifyLogin() {
