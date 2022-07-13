@@ -31,9 +31,9 @@ public class ProductPageObject extends BaseClass{
 		ActionClass.click(getDriver(), product);
 	}
 	
-	public void clickOnCart() throws InterruptedException {
+	public YourCartPageObject clickOnCart() throws InterruptedException {
 		ActionClass.click(getDriver(), cart);
-		//return new YourCart();
+		return new YourCartPageObject();
 	}
 		
 	public String verifyCartItem() {
