@@ -26,10 +26,10 @@ public class YourCartPageObject extends BaseClass {
 		PageFactory.initElements(getDriver(), this);
 	}
 	
-	public void clickOnCheckOut() throws InterruptedException {
+	public CheckoutPageObject clickOnCheckOut() throws InterruptedException {
 		ActionClass.click(getDriver(), checkoutbtn);
 		Thread.sleep(5000);
-		//return new CheckOutInfoPage();
+		return new CheckoutPageObject();
 	}
 	
 	public String verifyChechOutPage() {
