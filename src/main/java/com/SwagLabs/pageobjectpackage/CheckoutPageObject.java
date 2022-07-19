@@ -31,14 +31,14 @@ public class CheckoutPageObject extends BaseClass{
 	}
 	
 	
-	public void addInfo(String firstname, String lastname, String zipcode) throws InterruptedException {
+	public CheckOutOverviewPageObject addInfo(String firstname, String lastname, String zipcode) throws InterruptedException {
 		ActionClass.type(FirstName, firstname);
 		ActionClass.type(LasttName, lastname);
 		ActionClass.type(ZipCode, zipcode);
 		ActionClass.click(getDriver(), ContinueBtn);
 		
 		Thread.sleep(5000);
-		//return new CheckOutOverviewPage();
+		return new CheckOutOverviewPageObject();
 		
 	}
 	

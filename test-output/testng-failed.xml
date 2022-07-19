@@ -7,15 +7,15 @@
   <test thread-count="5" name="Test_All(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.SwagLabs.testcasespackage.UserInfoPageTestCase">
+      <class name="com.SwagLabs.testcasespackage.CostVerificationTestCase">
         <methods>
-          <include name="tearDown"/>
+          <include name="checkOutPageTestCase" invocation-numbers="0 1"/>
           <include name="afterSuite1"/>
           <include name="setup"/>
-          <include name="checkOutPageTestCase" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
           <include name="loadConfig"/>
         </methods>
-      </class> <!-- com.SwagLabs.testcasespackage.UserInfoPageTestCase -->
+      </class> <!-- com.SwagLabs.testcasespackage.CostVerificationTestCase -->
     </classes>
   </test> <!-- Test_All(failed) -->
 </suite> <!-- Failed suite [Suite] -->

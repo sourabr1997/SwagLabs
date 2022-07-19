@@ -14,7 +14,7 @@
   
   
     <classes>
-      <class name="com.SwagLabs.testcasespackage.UserInfoPageTestCase"/>
+      <class name="com.SwagLabs.testcasespackage.CostVerificationTestCase"/>
     </classes>
     
     
